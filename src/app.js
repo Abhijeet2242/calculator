@@ -3,6 +3,9 @@ const app = express();
 const port = process.env.PORT || 3000;
 require("./db/connection");
 const calculatorRouter = require("./routers/calculatorData");
+const cors = require("cors");
+
+app.use(cors());
 
 app.use(express.json());
 app.use(calculatorRouter);
