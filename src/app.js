@@ -11,7 +11,6 @@ app.use(calculatorRouter);
 app.get("/", (req, res) => {
   res.send("hello from the server");
 });
-
 app.listen(port, () => {
   console.log(`server running on port ${port}`);
 });
